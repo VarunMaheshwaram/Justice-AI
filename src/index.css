@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-navy-primary: #14243A;
+  --color-navy-deep: #0D1929;
+  --color-navy-secondary: #203650;
+  --color-accent-orange: #D9874D;
+  --color-accent-orange-light: #F5E4D6;
+  --color-canvas: #F7F8FA;
+  --color-surface: #FFFFFF;
+  --color-ink-primary: #202936;
+  --color-ink-secondary: #697586;
+  --color-hairline: #E5E9EF;
+  --color-status-success: #24845D;
+  --color-status-warning: #D99A35;
+  --color-status-error: #C94D4D;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #202936;
+    background-color: #F7F8FA;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+
+  button, a, input, select, textarea {
+    outline-color: #14243A;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #202936 !important;
+  }
+}

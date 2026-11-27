@@ -1,0 +1,197 @@
+import { LegalCase, TimelineEvent } from '../types';
+
+export const mockCases: LegalCase[] = [
+  {
+    id: 'case-001',
+    title: 'Horizon Residency Flat Possession Delay',
+    category: 'Property Disputes',
+    caseNumber: 'DEMO-CC/2026/0418',
+    courtName: 'State Consumer Disputes Redressal Commission (Demo)',
+    courtLocation: 'Hyderabad, Telangana',
+    userRole: 'Petitioner / Plaintiff',
+    opposingParty: 'Horizon Infratech Developers Pvt. Ltd. (Fictional)',
+    description:
+      'Demonstration dispute regarding an 18-month delay in handing over possession of Residential Unit B-1204 despite payment of 90% of the agreed sale consideration under the Builder-Buyer Agreement dated 12 March 2023.',
+    filingDate: '2026-04-15',
+    currentStage: 'Written Statement & Evidence Review',
+    status: 'Active',
+    additionalNotes:
+      'Review builder force-majeure reply against earlier email correspondence promising December 2024 handover.',
+    lastUpdated: '2026-11-22T15:40:00Z',
+    documentCount: 4,
+    notes: [
+      {
+        id: 'note-1',
+        title: 'Key dates to verify with advocate',
+        content:
+          'Confirm whether the 6-month grace period clause in Clause 9.2 of the sample agreement was triggered by any written notice prior to December 2024.',
+        updatedAt: '2026-11-20T10:15:00Z',
+      },
+      {
+        id: 'note-2',
+        title: 'Bank EMI receipts checklist',
+        content:
+          'Compile monthly housing loan interest certificates from April 2025 to November 2026 for compensation calculation review.',
+        updatedAt: '2026-11-18T17:30:00Z',
+      },
+    ],
+    isDemoRecord: true,
+  },
+  {
+    id: 'case-002',
+    title: 'Kaveri Logistics Vendor Service Agreement Dispute',
+    category: 'Contractual Disputes',
+    caseNumber: 'DEMO-COM.OS/2026/119',
+    courtName: 'Commercial Court, City Civil Complex (Demo)',
+    courtLocation: 'Bengaluru, Karnataka',
+    userRole: 'Respondent / Defendant',
+    opposingParty: 'Kaveri Supply Chain Solutions LLP (Fictional)',
+    description:
+      'Demonstration commercial contract matter involving disputed milestone invoices and service-level penalty deductions under a software integration master services agreement.',
+    filingDate: '2026-07-08',
+    currentStage: 'Pre-Institution Mediation & Reply',
+    status: 'In Review',
+    additionalNotes:
+      'Check acceptance sign-off emails for Phase 2 deliverables before finalising counter-statement.',
+    lastUpdated: '2026-11-19T11:20:00Z',
+    documentCount: 3,
+    notes: [
+      {
+        id: 'note-3',
+        title: 'SLA uptime logs',
+        content: 'Keep export of August 2026 outage tickets ready to substantiate service credit deductions.',
+        updatedAt: '2026-11-15T09:00:00Z',
+      },
+    ],
+    isDemoRecord: true,
+  },
+  {
+    id: 'case-003',
+    title: 'Residential Security Deposit Refund Claim',
+    category: 'Civil Disputes',
+    caseNumber: 'DEMO-CS/2026/0872',
+    courtName: 'Junior Civil Judge Court (Demo)',
+    courtLocation: 'Pune, Maharashtra',
+    userRole: 'Petitioner / Plaintiff',
+    opposingParty: 'Mr. Prakash Deshpande (Fictional Landlord)',
+    description:
+      'Demonstration tenancy dispute concerning non-refund of Rs. 1,50,000 residential security deposit after peaceful handover of keys and joint inspection checklist.',
+    filingDate: '2026-09-24',
+    currentStage: 'Legal Notice Sent — Awaiting Reply',
+    status: 'Pending Hearing',
+    additionalNotes: 'Joint exit checklist signed on 31 August 2026 notes only normal wear and tear.',
+    lastUpdated: '2026-11-12T08:45:00Z',
+    documentCount: 2,
+    notes: [],
+    isDemoRecord: true,
+  },
+  {
+    id: 'case-004',
+    title: 'Notice Period & Full-and-Final Settlement Matter',
+    category: 'Employment Matters',
+    caseNumber: 'DEMO-EMP/2026/0204',
+    courtName: 'Labour Commissioner Conciliation Forum (Demo)',
+    courtLocation: 'Hyderabad, Telangana',
+    userRole: 'Petitioner / Plaintiff',
+    opposingParty: 'NexaCore IT Services Pvt. Ltd. (Fictional)',
+    description:
+      'Demonstration employment dispute concerning withheld variable bonus and relieving letter after completion of 60-day contractual notice period.',
+    filingDate: '2026-02-10',
+    currentStage: 'Archived — Sample Settled Record',
+    status: 'Archived',
+    additionalNotes: 'Retained as a reference demonstration case.',
+    lastUpdated: '2026-10-01T14:00:00Z',
+    documentCount: 1,
+    notes: [],
+    isDemoRecord: true,
+  },
+];
+
+export const mockTimelineEvents: TimelineEvent[] = [
+  {
+    id: 'tl-001',
+    caseId: 'case-001',
+    date: '2023-03-12',
+    title: 'Builder-Buyer Agreement Executed',
+    description:
+      'Sample sale agreement executed for Unit B-1204 specifying an agreed handover date of 31 December 2024 with a 6-month grace period subject to written notice.',
+    sourceDocument: 'Builder_Buyer_Agreement_Sample.pdf',
+    eventCategory: 'Filing',
+    verificationStatus: 'AI-extracted',
+  },
+  {
+    id: 'tl-002',
+    caseId: 'case-001',
+    date: '2024-11-18',
+    title: 'Developer Email Confirming Ready-by-Dec Timeline',
+    description:
+      'Customer relations email assured interior finishing was 95% complete and handover would proceed by late December 2024 without mentioning regulatory delays.',
+    sourceDocument: 'Developer_Correspondence_Bundle.pdf',
+    eventCategory: 'Other',
+    verificationStatus: 'User-entered',
+  },
+  {
+    id: 'tl-003',
+    caseId: 'case-001',
+    date: '2026-01-22',
+    title: 'Formal Legal Notice Demanding Possession & Interest',
+    description:
+      'Notice dispatched demanding delivery of possession and statutory delay interest calculated from 1 January 2025.',
+    sourceDocument: 'Legal_Notice_Jan2026_Demo.pdf',
+    eventCategory: 'Notice',
+    verificationStatus: 'AI-extracted',
+  },
+  {
+    id: 'tl-004',
+    caseId: 'case-001',
+    date: '2026-02-14',
+    title: 'Builder Reply Citing Force Majeure & Supply Delay',
+    description:
+      'Opposing party replied attributing construction delay to municipal water-connection approvals from mid-2024, conflicting with the November 2024 email update.',
+    sourceDocument: 'Builder_Written_Reply_Demo.pdf',
+    eventCategory: 'Reply',
+    verificationStatus: 'AI-extracted',
+  },
+  {
+    id: 'tl-005',
+    caseId: 'case-001',
+    date: '2026-04-15',
+    title: 'Consumer Complaint Admitted (Demo Record)',
+    description:
+      'Demonstration complaint admitted for notice to opposite party and filing of written version within statutory period.',
+    sourceDocument: 'Admission_Order_Sample.pdf',
+    eventCategory: 'Interim Order',
+    verificationStatus: 'Court-confirmed',
+  },
+  {
+    id: 'tl-006',
+    caseId: 'case-001',
+    date: '2026-12-10',
+    title: 'Scheduled Evidence Affidavit Hearing (Illustrative)',
+    description:
+      'Upcoming date for filing complainant evidence affidavit and supporting payment ledger.',
+    sourceDocument: 'Daily_Order_Oct2026_Demo.pdf',
+    eventCategory: 'Hearing',
+    verificationStatus: 'Court-confirmed',
+  },
+  {
+    id: 'tl-007',
+    caseId: 'case-002',
+    date: '2026-07-08',
+    title: 'Demand Notice Received for Milestone 3 Invoice',
+    description: 'Opposing vendor claimed Rs. 8,40,000 for Phase 3 deployment despite open defect log.',
+    sourceDocument: 'Vendor_Demand_Notice_Demo.pdf',
+    eventCategory: 'Notice',
+    verificationStatus: 'AI-extracted',
+  },
+  {
+    id: 'tl-008',
+    caseId: 'case-002',
+    date: '2026-08-02',
+    title: 'Preliminary Reply with UAT Defect Schedule Sent',
+    description: 'Detailed list of 14 unresolved critical UAT issues shared per Clause 7.4 of the MSA.',
+    sourceDocument: 'MSA_Reply_Draft_Demo.docx',
+    eventCategory: 'Reply',
+    verificationStatus: 'User-entered',
+  },
+];

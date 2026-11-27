@@ -1,0 +1,1323 @@
+
+# JUSTICE AI
+## COMPLETE FRONTEND DEVELOPMENT — MASTER PROJECT SPECIFICATION
+
+You are an expert software architect, senior React developer, product designer, UI/UX engineer and quality assurance specialist.
+
+Your task is to build a complete, premium, responsive and interactive legal technology web application named JUSTICE AI.
+
+You must treat this as a serious legal-tech SaaS product intended for future real-world development, not as a simple website, static landing page or basic dashboard.
+
+Build a complete application with multiple user roles, a professional design system, comprehensive navigation, functional interfaces, realistic demonstration data, reusable components and maintainable architecture.
+
+The application will eventually be connected to a Python FastAPI backend, PostgreSQL database, authentication service, OCR engine, document processing system and AI-powered legal intelligence engine.
+
+IMPORTANT: THIS DEVELOPMENT PHASE IS FRONTEND ONLY.
+
+Do not configure a production database, external authentication provider, external AI API, OCR service, Google Maps API or live court integration.
+
+Use local demonstration data and frontend state to implement the complete user experience.
+
+Do not pretend that simulated features are genuinely operational.
+
+==================================================
+01. PRODUCT IDENTITY
+==================================================
+
+PRODUCT NAME:
+JUSTICE AI
+
+TAGLINE:
+Understand Your Case. Make Informed Decisions.
+
+ALTERNATIVE TAGLINE:
+Clarity in Law. Intelligence in Action.
+
+PRODUCT CATEGORY:
+AI-Powered Legal Case Intelligence Platform.
+
+TARGET MARKET:
+India.
+
+PRODUCT VISION:
+
+JUSTICE AI is designed to simplify access to legal information by helping ordinary people understand complex legal documents, identify potentially important inconsistencies, analyse arguments, organise case information and discover suitable advocates.
+
+The platform should act as an intelligent legal information assistant.
+
+Its purpose is to bridge the gap between complicated legal information and ordinary people who may not have a legal background.
+
+CORE OBJECTIVES:
+
+1. Simplify complicated legal documents.
+2. Extract important case information.
+3. Identify potential contradictions across documents.
+4. Explain arguments from different perspectives.
+5. Organise evidence and case information.
+6. Explore relevant Indian legal provisions.
+7. Generate document-based case timelines.
+8. Help users discover advocates.
+9. Provide an accessible legal information experience.
+10. Create a central workspace for managing legal cases.
+
+The product must be neutral, transparent and privacy-conscious.
+
+It must not claim to replace advocates, courts or professional legal advice.
+
+==================================================
+02. FRONTEND TECHNOLOGY
+==================================================
+
+Use the following stack:
+
+- React.js.
+- TypeScript.
+- Vite where compatible with the generated environment.
+- Tailwind CSS.
+- Shadcn/UI.
+- Lucide React.
+- React Router.
+- React Hook Form.
+- Zod.
+- Recharts.
+- date-fns.
+
+Use a modular architecture and reusable components.
+
+Use proper TypeScript interfaces.
+
+Separate:
+- UI components.
+- Pages.
+- Layouts.
+- Data.
+- Services.
+- Hooks.
+- Types.
+- Utilities.
+- Routing.
+
+Do not put the entire application inside one file.
+
+Avoid unnecessary dependencies.
+
+Keep the project compatible with local development in Kiro IDE.
+
+==================================================
+03. VISUAL DESIGN SYSTEM
+==================================================
+
+Create a premium legal technology SaaS interface.
+
+DESIGN INSPIRATION:
+
+- Enterprise SaaS platforms.
+- Modern fintech applications.
+- Professional legal technology products.
+- Minimal, refined dashboard interfaces.
+
+COLOURS:
+
+Primary Navy: #14243A
+Deep Navy: #0D1929
+Secondary Navy: #203650
+Accent Orange: #D9874D
+Light Orange: #F5E4D6
+White: #FFFFFF
+Background: #F7F8FA
+Card Background: #FFFFFF
+Primary Text: #202936
+Secondary Text: #697586
+Borders: #E5E9EF
+Success: #24845D
+Warning: #D99A35
+Error: #C94D4D
+
+TYPOGRAPHY:
+
+Use Inter.
+
+DESIGN REQUIREMENTS:
+
+- Clean layouts.
+- Premium typography.
+- Consistent spacing.
+- Elegant cards.
+- Subtle shadows.
+- Moderate rounded corners.
+- Professional icons.
+- Clear visual hierarchy.
+- Responsive tables.
+- Beautiful forms.
+- Subtle animations.
+- Consistent navigation.
+- Accessible colour contrast.
+
+Create a custom JUSTICE AI logo combining legal symbolism and modern technology.
+
+Avoid:
+- Neon colours.
+- Excessive gradients.
+- Unnecessary glassmorphism.
+- Cartoonish graphics.
+- Cluttered dashboards.
+- Generic AI landing-page templates.
+
+The application should look like a real legal technology startup.
+
+==================================================
+04. APPLICATION MODULES
+==================================================
+
+Create four application environments.
+
+A. PUBLIC WEBSITE
+
+- Landing Page.
+- About Us.
+- Features.
+- How It Works.
+- Find Advocates.
+- Contact.
+- Login.
+- Register.
+- Privacy Policy.
+- Terms and Conditions.
+- Legal Disclaimer.
+
+B. CLIENT APPLICATION
+
+- Dashboard.
+- My Cases.
+- Create Case.
+- Case Details.
+- Documents.
+- Document Analysis.
+- Important Points.
+- Contradiction Detection.
+- Personal Perspective Analysis.
+- AI Legal Assistant.
+- Indian Legal Knowledge.
+- Case Timeline.
+- Find Advocates.
+- Advocate Details.
+- Saved Advocates.
+- Enquiries.
+- Notifications.
+- Profile.
+- Settings.
+
+C. ADVOCATE APPLICATION
+
+- Dashboard.
+- Professional Profile.
+- Edit Profile.
+- Practice Areas.
+- Verification.
+- Enquiries.
+- Client Requests.
+- Availability.
+- Notifications.
+- Settings.
+
+D. ADMIN APPLICATION
+
+- Dashboard.
+- User Management.
+- Advocate Management.
+- Verification Requests.
+- Legal Sources.
+- Reports.
+- Platform Analytics.
+- Audit Logs.
+- Settings.
+
+==================================================
+05. PUBLIC LANDING PAGE
+==================================================
+
+Create a sophisticated landing page.
+
+NAVBAR:
+
+- JUSTICE AI logo.
+- Home.
+- Features.
+- How It Works.
+- Find Advocates.
+- About.
+- Login.
+- Get Started.
+
+HERO HEADING:
+
+"Legal Clarity, Powered by Intelligence."
+
+SUPPORTING TEXT:
+
+"Understand complex legal documents, uncover important case insights and discover suitable legal professionals — all through one intelligent platform."
+
+PRIMARY CTA:
+Start Analysing.
+
+SECONDARY CTA:
+Explore Features.
+
+HERO VISUAL:
+
+Create a premium dashboard illustration showing:
+- Legal document analysis.
+- Important case points.
+- Potential contradictions.
+- Case timeline.
+- Advocate discovery.
+
+FEATURE SECTION:
+
+1. AI Document Intelligence.
+2. Potential Contradiction Detection.
+3. Personalised Case Analysis.
+4. Indian Legal Knowledge.
+5. Case Timeline.
+6. Advocate Discovery.
+
+HOW IT WORKS:
+
+Step 1: Upload documents.
+Step 2: Extract and process information.
+Step 3: Review AI-generated insights.
+Step 4: Explore legal information.
+Step 5: Discover suitable advocates.
+
+WHY JUSTICE AI:
+
+Explain the problem of complex legal terminology and inaccessible legal information.
+
+TRUST SECTION:
+
+- Privacy-conscious design.
+- Balanced analysis.
+- Source-grounded legal information.
+- Transparent AI limitations.
+
+FINAL CTA:
+
+"Take the first step towards understanding your case."
+
+Create a professional footer with:
+- About.
+- Features.
+- Contact.
+- Privacy.
+- Terms.
+- Disclaimer.
+
+==================================================
+06. LOGIN AND REGISTRATION
+==================================================
+
+Create professional authentication screens.
+
+LOGIN FIELDS:
+
+- Email.
+- Password.
+- Show/hide password.
+- Remember me.
+- Forgot password.
+- Login button.
+
+REGISTRATION FIELDS:
+
+- Full name.
+- Email.
+- Phone.
+- Password.
+- Confirm password.
+- Account type.
+
+ACCOUNT TYPES:
+
+- Client.
+- Advocate.
+
+For this phase, create clearly labelled DEMO MODE access:
+
+- Continue as Client.
+- Continue as Advocate.
+- Continue as Admin.
+
+Implement frontend role-based routing.
+
+Do not represent demo login as production authentication.
+
+==================================================
+07. GLOBAL DASHBOARD DESIGN
+==================================================
+
+Create separate layouts for clients, advocates and administrators.
+
+DESKTOP SIDEBAR:
+
+- Logo.
+- Navigation links.
+- Active page indicator.
+- Collapsible sidebar.
+- User profile.
+- Logout.
+
+TOP HEADER:
+
+- Page title.
+- Breadcrumbs.
+- Search.
+- Notifications.
+- User avatar.
+- Profile dropdown.
+
+MAIN CONTENT:
+
+- Page heading.
+- Supporting description.
+- Main actions.
+- Dashboard cards.
+- Tables.
+- Content sections.
+
+MOBILE:
+
+- Collapsible navigation drawer.
+- Responsive cards.
+- Responsive tables.
+- Mobile-friendly forms.
+- Proper spacing.
+- No horizontal overflow.
+
+==================================================
+08. CLIENT DASHBOARD
+==================================================
+
+HEADING:
+
+"Welcome back, Varun"
+
+SUPPORTING TEXT:
+
+"Your legal information and case insights, organised in one place."
+
+STATISTICS:
+
+- Total Cases.
+- Documents Uploaded.
+- Analyses Completed.
+- Saved Advocates.
+
+QUICK ACTIONS:
+
+- Create New Case.
+- Upload Document.
+- Analyse Documents.
+- Ask Justice AI.
+- Find Advocate.
+
+RECENT CASES:
+
+Show:
+- Case title.
+- Category.
+- User role.
+- Status.
+- Last updated.
+- Document count.
+
+RECENT ANALYSIS:
+
+Show:
+- Report title.
+- Related case.
+- Date.
+- Status.
+- View report.
+
+RECENT ACTIVITY:
+
+Show recent document uploads, case updates and analysis actions.
+
+Use fictional demonstration data.
+
+==================================================
+09. CASE MANAGEMENT
+==================================================
+
+Create a complete My Cases module.
+
+CASE CATEGORIES:
+
+- Civil Disputes.
+- Criminal Matters.
+- Family Matters.
+- Property Disputes.
+- Consumer Complaints.
+- Contractual Disputes.
+- Employment Matters.
+- Banking and Financial Disputes.
+- Intellectual Property.
+- Corporate and Commercial.
+- Constitutional Matters.
+- Other.
+
+CREATE CASE FORM:
+
+- Case Title.
+- Case Category.
+- Case Number.
+- Court Name.
+- Court Location.
+- User Role.
+- Opposing Party.
+- Case Description.
+- Filing Date.
+- Current Stage.
+- Additional Notes.
+
+USER ROLES:
+
+- Petitioner / Plaintiff.
+- Respondent / Defendant.
+- Other Party.
+
+MY CASES PAGE:
+
+- Search.
+- Filters.
+- Sorting.
+- Grid view.
+- List view.
+- Create Case.
+
+CASE DETAILS TABS:
+
+1. Overview.
+2. Documents.
+3. AI Analysis.
+4. Important Points.
+5. Contradictions.
+6. Legal References.
+7. Timeline.
+8. Advocates.
+9. Notes.
+
+Implement create, edit, archive and delete functionality using local frontend state.
+
+==================================================
+10. DOCUMENT MANAGEMENT
+==================================================
+
+Create a professional document management workspace.
+
+SUPPORTED FILE FORMATS:
+
+- PDF.
+- DOCX.
+- JPG.
+- JPEG.
+- PNG.
+
+UPLOAD FEATURES:
+
+- Drag and drop.
+- Browse files.
+- Multiple uploads.
+- Upload progress simulation.
+- File size validation.
+- File type validation.
+- Document preview where supported.
+- Delete documents.
+- Associate documents with cases.
+
+DOCUMENT CATEGORIES:
+
+- Legal Notice.
+- Petition.
+- Written Statement.
+- Affidavit.
+- Court Order.
+- Judgment.
+- Agreement.
+- Contract.
+- Evidence.
+- Correspondence.
+- Other.
+
+DOCUMENT LIST COLUMNS:
+
+- File Name.
+- Category.
+- Case.
+- Type.
+- Upload Date.
+- Status.
+- Actions.
+
+PROCESSING STATES:
+
+- Uploaded.
+- Processing.
+- Ready for Analysis.
+- Completed.
+- Failed.
+
+All processing in this phase must be labelled as simulated.
+
+==================================================
+11. AI LEGAL ANALYSIS INTERFACE
+==================================================
+
+Create a sophisticated legal analysis workspace.
+
+PAGE TITLE:
+
+"AI Legal Analysis"
+
+Allow users to:
+
+- Select a case.
+- Select documents.
+- Start a demonstration analysis.
+- View an analysis report.
+
+RESULT TABS:
+
+1. Case Summary.
+2. Important Facts.
+3. Legal Arguments.
+4. Potential Contradictions.
+5. Missing Information.
+6. Personal Perspective.
+7. Important Dates.
+8. Legal References.
+
+CASE SUMMARY:
+
+- Overview.
+- Parties.
+- Main dispute.
+- Claims.
+- Important facts.
+- Important dates.
+
+IMPORTANT POINTS:
+
+Show:
+- Important statements.
+- Allegations.
+- Supporting arguments.
+- Opposing arguments.
+- Evidence references.
+- Missing information.
+
+CONTRADICTION ANALYSIS:
+
+Show two documents side by side.
+
+Display:
+- Document A.
+- Document B.
+- Relevant passages.
+- Explanation.
+- Potential significance.
+- Review status.
+
+PERSONAL PERSPECTIVE:
+
+Allow:
+- Petitioner.
+- Respondent.
+- Other Party.
+
+Show:
+- Points supporting the user.
+- Points potentially weakening the user's position.
+- Unclear information.
+- Questions for an advocate.
+
+All results must be labelled as DEMONSTRATION DATA.
+
+Never claim that simulated results are genuine legal analysis.
+
+==================================================
+12. AI LEGAL ASSISTANT
+==================================================
+
+Create a modern chat interface.
+
+TITLE:
+
+"Ask Justice AI"
+
+FEATURES:
+
+- Chat history.
+- New conversation.
+- User messages.
+- AI messages.
+- Message input.
+- Send button.
+- Suggested questions.
+- Copy response.
+- Feedback.
+- Clear conversation.
+- Case selector.
+- Document selector.
+
+SUGGESTED QUESTIONS:
+
+- Explain my case in simple English.
+- What are the main arguments?
+- What supports my position?
+- What weakens my position?
+- Are there potential contradictions?
+- What important dates should I know?
+- Explain the legal sections mentioned.
+- What should I discuss with my advocate?
+
+Implement a local demonstration chat response system.
+
+Label all sample responses as illustrative.
+
+==================================================
+13. INDIAN LEGAL KNOWLEDGE
+==================================================
+
+Create a legal research interface.
+
+PAGE TITLE:
+
+"Indian Legal Knowledge"
+
+FEATURES:
+
+- Search.
+- Category filters.
+- Popular topics.
+- Acts and legislation.
+- Legal sections.
+- Court judgments.
+- Legal definitions.
+- Recently viewed.
+
+CATEGORIES:
+
+- Constitutional Law.
+- Criminal Law.
+- Civil Law.
+- Family Law.
+- Property Law.
+- Consumer Law.
+- Corporate Law.
+- Labour Law.
+- Taxation.
+- Cyber Law.
+
+LEGAL INFORMATION CARDS:
+
+- Title.
+- Category.
+- Jurisdiction.
+- Description.
+- Source.
+- Date.
+- Last updated.
+
+Use clearly labelled demonstration records.
+
+Do not fabricate verified legal citations.
+
+==================================================
+14. CASE TIMELINE
+==================================================
+
+Create an interactive visual timeline.
+
+EVENT TYPES:
+
+- Filing.
+- Notice.
+- Reply.
+- Hearing.
+- Interim Order.
+- Final Order.
+- Judgment.
+- Appeal.
+- Other.
+
+EVENT DETAILS:
+
+- Date.
+- Title.
+- Description.
+- Source document.
+- Event category.
+- Verification status.
+
+FEATURES:
+
+- Add Event.
+- Edit Event.
+- Delete Event.
+- Search.
+- Filters.
+- View Source.
+
+Distinguish:
+- User-entered.
+- AI-extracted.
+- Court-confirmed.
+
+Use fictional data.
+
+==================================================
+15. ADVOCATE DISCOVERY
+==================================================
+
+Create a premium advocate directory.
+
+FILTERS:
+
+- City.
+- State.
+- Locality.
+- Specialization.
+- Experience.
+- Consultation Fee.
+- Language.
+- Verification Status.
+
+PRACTICE AREAS:
+
+- Civil Law.
+- Criminal Law.
+- Family Law.
+- Property Law.
+- Corporate Law.
+- Consumer Law.
+- Constitutional Law.
+- Labour and Employment.
+- Banking and Finance.
+- Intellectual Property.
+- Taxation.
+- Cyber Law.
+- Commercial Litigation.
+
+ADVOCATE CARDS:
+
+- Photo or initials.
+- Name.
+- Specialization.
+- Experience.
+- Location.
+- Indicative consultation fee.
+- Languages.
+- Verification status.
+- View Profile.
+- Save Advocate.
+
+ADVOCATE DETAIL PAGE:
+
+- Biography.
+- Education.
+- Qualifications.
+- Enrolment details.
+- Experience.
+- Practice areas.
+- Office address.
+- Contact details.
+- Indicative fees.
+- Professional background.
+
+Implement working search, filters and save/unsave actions.
+
+Use fictional advocate profiles and label them as demo profiles.
+
+==================================================
+16. ADVOCATE DASHBOARD
+==================================================
+
+SIDEBAR:
+
+- Overview.
+- My Profile.
+- Edit Profile.
+- Practice Areas.
+- Verification.
+- Enquiries.
+- Client Requests.
+- Availability.
+- Notifications.
+- Settings.
+
+STATISTICS:
+
+- Profile Completion.
+- Total Enquiries.
+- Pending Enquiries.
+- Profile Views.
+
+PROFILE EDITING:
+
+Allow editing of:
+- Biography.
+- Profile Picture.
+- Experience.
+- Qualifications.
+- Practice Areas.
+- Contact Information.
+- Office Address.
+- Indicative Fees.
+- Languages.
+
+VERIFICATION:
+
+- Not Submitted.
+- Pending Review.
+- Approved.
+- Rejected.
+
+ENQUIRY STATUSES:
+
+- New.
+- Reviewed.
+- Responded.
+- Closed.
+
+Use fictional demonstration data.
+
+==================================================
+17. ADMIN DASHBOARD
+==================================================
+
+Create an administrator interface.
+
+SIDEBAR:
+
+- Dashboard.
+- Users.
+- Advocates.
+- Verification Requests.
+- Legal Sources.
+- Reports.
+- Analytics.
+- Audit Logs.
+- Settings.
+
+STATISTICS:
+
+- Total Users.
+- Active Users.
+- Registered Advocates.
+- Pending Verification.
+- Total Cases.
+- Documents Uploaded.
+- Analyses Generated.
+
+Create functional demonstration tables and analytics charts.
+
+==================================================
+18. PROFILE, SETTINGS AND NOTIFICATIONS
+==================================================
+
+CLIENT PROFILE:
+
+- Name.
+- Email.
+- Phone.
+- City.
+- State.
+- Preferred Language.
+- Picture.
+
+ADVOCATE PROFILE:
+
+- Professional Name.
+- Qualifications.
+- Enrolment Details.
+- Practice Areas.
+- Experience.
+- Contact Information.
+- Office Address.
+
+SETTINGS:
+
+- Personal Information.
+- Account Preferences.
+- Notification Preferences.
+- Privacy Preferences.
+- Appearance.
+- Security Information.
+
+NOTIFICATIONS:
+
+- Document Uploaded.
+- Analysis Completed.
+- Processing Failed.
+- Case Updated.
+- New Enquiry.
+- Profile Updated.
+- Verification Updated.
+
+Implement:
+- Mark as Read.
+- Mark All as Read.
+- Filters.
+- Notification Dropdown.
+
+==================================================
+19. REPORT GENERATION
+==================================================
+
+Create report preview interfaces for:
+
+- Case Summary.
+- Document Analysis.
+- Important Points.
+- Contradiction Report.
+- Case Timeline.
+
+Include:
+- JUSTICE AI branding.
+- Report title.
+- Case title.
+- Generated date.
+- Analysis sections.
+- Source references.
+- AI-generated disclaimer.
+
+Implement print-friendly styling and export where feasible.
+
+Do not represent reports as official court documents.
+
+==================================================
+20. MOCK DATA AND SERVICE ARCHITECTURE
+==================================================
+
+Create separate mock data modules.
+
+- mockUsers.
+- mockCases.
+- mockDocuments.
+- mockAnalysis.
+- mockLegalSources.
+- mockAdvocates.
+- mockNotifications.
+
+Create service modules:
+
+authService:
+- login.
+- register.
+- logout.
+- getCurrentUser.
+
+caseService:
+- getCases.
+- getCaseById.
+- createCase.
+- updateCase.
+- deleteCase.
+
+documentService:
+- uploadDocument.
+- getDocuments.
+- deleteDocument.
+- getDocumentStatus.
+
+analysisService:
+- analyseDocuments.
+- getAnalysisReport.
+- getContradictions.
+- getImportantPoints.
+
+legalService:
+- searchLegalSources.
+- getLegalSourceById.
+
+advocateService:
+- searchAdvocates.
+- getAdvocateById.
+- saveAdvocate.
+- submitEnquiry.
+
+notificationService:
+- getNotifications.
+- markAsRead.
+- markAllAsRead.
+
+All services must use local mock data for this phase.
+
+Keep UI components independent of the mock implementation.
+
+==================================================
+21. FRONTEND CODE STRUCTURE
+==================================================
+
+Use a structure similar to:
+
+src/
+├── assets/
+├── components/
+│   ├── ui/
+│   ├── common/
+│   ├── navigation/
+│   ├── dashboard/
+│   ├── cases/
+│   ├── documents/
+│   ├── analysis/
+│   ├── advocates/
+│   ├── chatbot/
+│   └── forms/
+├── layouts/
+├── pages/
+│   ├── public/
+│   ├── auth/
+│   ├── client/
+│   ├── advocate/
+│   └── admin/
+├── services/
+├── data/
+├── hooks/
+├── types/
+├── utils/
+├── context/
+├── routes/
+├── constants/
+├── App.tsx
+└── main.tsx
+
+Create a README.md with setup instructions, technology stack, features, folder structure and demo instructions.
+
+==================================================
+22. FUTURE BACKEND INTEGRATION
+==================================================
+
+Prepare the frontend for future integration with:
+
+Backend:
+Python + FastAPI.
+
+Database:
+PostgreSQL.
+
+Authentication:
+Supabase Auth or equivalent.
+
+Storage:
+Private document storage.
+
+PDF:
+PyMuPDF.
+
+OCR:
+Tesseract.
+
+AI:
+Gemini API or another external LLM.
+
+RAG:
+pgvector.
+
+Maps:
+Google Maps Platform.
+
+Create typed service interfaces and centralised API configuration.
+
+Do not implement these integrations now.
+
+The application must be easy to connect to a real backend later.
+
+==================================================
+23. SECURITY AND LEGAL TRANSPARENCY
+==================================================
+
+Although this is a frontend-only phase:
+
+- Do not expose sensitive data.
+- Do not use real confidential legal documents.
+- Use fictional sample records.
+- Clearly label demonstration information.
+- Do not present AI-generated outputs as verified legal opinions.
+- Do not claim advocate credentials are verified unless an actual verification process exists.
+- Do not claim live court data is available.
+- Do not automatically share documents with advocates.
+
+Add a visible disclaimer:
+
+"JUSTICE AI is an AI-assisted legal information and document analysis platform. It does not provide legal representation, replace a qualified advocate or guarantee legal outcomes. Information generated by AI may contain errors and must be independently verified."
+
+==================================================
+24. RESPONSIVE DESIGN
+==================================================
+
+Support:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Check:
+- Sidebar behaviour.
+- Responsive navigation.
+- Tables.
+- Forms.
+- Cards.
+- Chat interface.
+- Document previews.
+- Modals.
+- Buttons.
+
+Avoid horizontal overflow.
+
+==================================================
+25. DEVELOPMENT PROCESS
+==================================================
+
+Work in structured development phases.
+
+PHASE 1:
+Project initialisation, architecture, routing and design system.
+
+PHASE 2:
+Landing page, public pages and authentication.
+
+PHASE 3:
+Client dashboard and case management.
+
+PHASE 4:
+Document management and AI analysis interfaces.
+
+PHASE 5:
+Legal knowledge, chatbot and timeline.
+
+PHASE 6:
+Advocate discovery and advocate dashboard.
+
+PHASE 7:
+Administrator dashboard, notifications and reports.
+
+PHASE 8:
+Responsive improvements, testing and documentation.
+
+Before each major phase:
+- Inspect existing code.
+- Plan the changes.
+- Preserve working functionality.
+- Avoid unnecessary rewrites.
+- Implement components incrementally.
+
+Do not stop after writing a plan.
+
+Actually create and implement the application.
+
+==================================================
+26. TESTING
+==================================================
+
+Verify:
+
+1. Application starts successfully.
+2. All routes work.
+3. Navigation works.
+4. Demo login works.
+5. Client dashboard works.
+6. Advocate dashboard works.
+7. Admin dashboard works.
+8. Case creation works.
+9. Case editing works.
+10. Document upload interactions work.
+11. Analysis demonstration works.
+12. Chat demonstration works.
+13. Timeline interactions work.
+14. Advocate search works.
+15. Filters work.
+16. Save advocate works.
+17. Notifications work.
+18. Settings work.
+19. Forms validate.
+20. Responsive layouts work.
+21. No broken links.
+22. No major console errors.
+23. Build completes successfully.
+
+Fix errors before declaring completion.
+
+==================================================
+27. FINAL PRODUCT EXPECTATION
+==================================================
+
+A client should be able to:
+
+- Visit JUSTICE AI.
+- Explore its features.
+- Enter demo mode.
+- Access a dashboard.
+- Create legal cases.
+- Manage documents.
+- Explore sample AI analysis.
+- View potential contradictions.
+- Review important points.
+- Explore legal information.
+- Use the demonstration chatbot.
+- View case timelines.
+- Discover advocates.
+- Save advocates.
+- Manage their profile.
+
+An advocate should be able to:
+
+- Enter demo mode.
+- View their dashboard.
+- Manage professional information.
+- Update practice areas.
+- Manage enquiries.
+- View verification information.
+
+An administrator should be able to:
+
+- View platform statistics.
+- Browse demo users.
+- Review demo advocates.
+- View verification requests.
+- Manage sample legal sources.
+- Explore platform activity.
+
+The final application must be complete, visually polished, interactive, responsive and ready for future backend integration.
+
+==================================================
+FINAL COMMAND
+==================================================
+
+Begin by inspecting the available project workspace.
+
+If empty, initialise the project.
+
+Create the application architecture and implement the full frontend.
+
+Use React and TypeScript.
+
+Build the pages and functionality in the specified phases.
+
+Do not stop at a landing page.
+
+Do not leave major navigation links empty.
+
+Do not use fake data without labelling it.
+
+Do not claim integrations are operational when they are not.
+
+Do not overwrite working code unnecessarily.
+
+Test the application and fix errors.
+
+Deliver a complete JUSTICE AI frontend suitable for continued development in Kiro IDE.
+
+START BUILDING NOW.
